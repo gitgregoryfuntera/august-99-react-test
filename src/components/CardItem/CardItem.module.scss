@@ -1,0 +1,45 @@
+.itemContainer {
+  margin: 1rem auto;
+  width: 320px;
+  max-height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  .itemTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    .launchStatus {
+      height: 30px;
+      padding: 5px;
+      margin: 5px;
+      color: #fff;
+      &.success {
+        background-color: green;
+      }
+      &.failure {
+        background-color: red;
+      }
+    }
+  }
+
+  .itemDetails {
+    display: flex;
+    flex-direction: row;
+    .itemImageContainer {
+      width: 100px;
+    }
+    .itemTextContainer {
+      width: 200px;
+      text-align: left;
+      padding-left: 10px;
+      .text {
+        display: -webkit-box;
+        overflow: hidden;
+        max-height: 100px;
+      }
+    }
+  }
+}
