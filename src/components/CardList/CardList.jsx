@@ -40,7 +40,7 @@ const CardList = () => {
       // Added timeout to show loader
       setTimeout(() => {
           fetchLaunches(offset);
-      }, 500);
+      }, 1500);
     }
   }, [offset]);
 
